@@ -1,18 +1,36 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+# Описание проекта
+## 1. Структура проекта
 
 In the project directory, you can run:
 
-### `npm start`
+### `choco_project/
+│
+├── app.py               # Flask-приложение, все маршруты API
+├── config.py            # Настройки Flask и SQLAlchemy
+├── models.py            # ORM-модели: Sale, Product, Country, SalesPerson
+├── resources/
+│   ├── sale.py          # CRUD для продаж (Sale)
+│   └── stats.py         # Групповые выборки для графиков
+├── upload_db.py         # Загрузка CSV в SQLite
+├── choco_sales.db       # База данных SQLite
+│
+└── frontend/
+    ├── package.json
+    └── src/
+        ├── api.ts
+        ├── types.ts
+        ├── pages/
+        │   ├── Home.tsx
+        │   ├── TablePage.tsx
+        │   ├── ItemDetail.tsx
+        │   ├── ChartsPage.tsx
+        │   └── GalleryItem.tsx
+        ├── App.tsx
+        └── index.tsx`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 ### `npm test`
 
