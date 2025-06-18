@@ -5,14 +5,14 @@ In the project directory, you can run:
 
 ### `choco_project/
 │
-├── app.py               # Flask-приложение, все маршруты API
-├── config.py            # Настройки Flask и SQLAlchemy
-├── models.py            # ORM-модели: Sale, Product, Country, SalesPerson
+├── app.py               
+├── config.py            
+├── models.py            
 ├── resources/
-│   ├── sale.py          # CRUD для продаж (Sale)
-│   └── stats.py         # Групповые выборки для графиков
-├── upload_db.py         # Загрузка CSV в SQLite
-├── choco_sales.db       # База данных SQLite
+│   ├── sale.py          
+│   └── stats.py         
+├── upload_db.py         
+├── choco_sales.db       
 │
 └── frontend/
     ├── package.json
